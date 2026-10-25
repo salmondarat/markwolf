@@ -26,6 +26,12 @@ sketch
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 
+# agents
+.agents
+.claude
+.commandcode
+.opencode
+
 # Local History for Visual Studio Code
 .history/
 
