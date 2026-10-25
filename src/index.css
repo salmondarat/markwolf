@@ -123,6 +123,17 @@
   border-radius: 0 0.375rem 0.375rem 0;
 }
 
+.markdown-body .table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.markdown-body .table-scroll table {
+  margin: 0;
+}
+
 .markdown-body table {
   width: 100%;
   border-collapse: collapse;
@@ -247,6 +258,11 @@ body.print-page-custom {
   }
 
   /* ── Table wrapping ── */
+  .markdown-body .table-scroll {
+    overflow: visible !important;
+    margin: 0 !important;
+  }
+
   .markdown-body table {
     table-layout: auto !important;
     width: 100% !important;

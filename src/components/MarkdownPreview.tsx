@@ -73,6 +73,11 @@ export const MarkdownPreview: React.FC<MarkdownPreviewProps> = ({
       </div>`;
     };
 
+    const defaultTable = renderer.table.bind(renderer);
+    renderer.table = function (token) {
+      return `<div class="table-scroll">${defaultTable(token)}</div>`;
+    };
+
     marked.setOptions({
       renderer,
       gfm: true,
